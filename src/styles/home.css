@@ -285,3 +285,8 @@
      headline has to start below it or the first line reads through the navy. */
   .home { padding-top: 104px; }
 }
+
+/* Longer supplied headline wraps within the existing intro landing target. */
+.home__line { white-space: normal; text-wrap: balance; }
+.home__title { max-width: 23ch; font-size: clamp(30px, 3vw, 60px); }
+.tools-marquee__initials { display: grid; place-items: center; width: 20px; height: 20px; font-size: 11px; font-weight: 700; color: var(--navy); }

@@ -1,16 +1,4 @@
-/**
- * YOUR IDENTITY - start here.
- *
- * Everything that says who you are lives in this file: name, handle, photo,
- * socials, email and the Home headline. Every value below is a PLACEHOLDER.
- * Replace the text, or hand this file to your AI assistant and tell it what
- * to put in each field.
- *
- * Page-specific copy (projects, services, testimonials, FAQs) lives in the
- * other files in src/data/ and at the top of each view component.
- */
-
-import { Briefcase, SealCheck, Clock, type Icon } from '@/components/slab'
+import { Briefcase, Stack, Clock, type Icon } from '@/components/slab'
 
 export type SocialLink = {
   label: string
@@ -45,32 +33,27 @@ export type Profile = {
   socials: SocialLink[]
 }
 
+// TODO: Add Crystal's approved portrait and public social URLs.
+// TODO: Add Crystal's public email
 export const profile: Profile = {
-  name: 'Your Name',
-  firstName: 'Your Name',
-  handle: '@yourhandle',
-  role: 'PLACEHOLDER - your title',
+  name: 'Crystal Judy',
+  firstName: 'Crystal',
+  handle: '',
+  role: 'Digital Marketing & Creative Systems Specialist',
   avatarSrc: '/avatar.svg',
-  verifiedLabel: 'PLACEHOLDER - what the tick means (e.g. a certification)',
-  email: 'you@example.com',
-  location: 'PLACEHOLDER - your city or timezone',
-  // Pick any icon from https://phosphoricons.com and import it above.
+  verifiedLabel: '', // No verified credential has been supplied.
+  email: '',
+  location: 'Philippines · GMT+8',
   stats: [
-    { value: '0 yrs', label: 'PLACEHOLDER', Icon: Briefcase },
-    { value: '#000', label: 'PLACEHOLDER', Icon: SealCheck },
-    { value: 'GMT+0', label: 'PLACEHOLDER', Icon: Clock },
+    { value: 'Marketing', label: 'Strategy & campaigns', Icon: Briefcase },
+    { value: 'Creative', label: 'Content & systems', Icon: Stack },
+    { value: 'GMT+8', label: 'Philippines', Icon: Clock },
   ],
-  // The intro types this line, then flies it into the Home headline.
-  // Keep it short: two halves, 5-8 words total.
-  displayName: { line1: 'Your headline here.', line2: 'Keep it short.' },
+  displayName: { line1: 'Strategy. Creative.', line2: 'Systems that get it done.' },
   hero: {
-    body: 'PLACEHOLDER - one line on what you do and who you do it for.',
+    body: 'I help service-based businesses and growing brands turn ideas into content, campaigns, funnels, and follow-up systems that actually get implemented.',
     portraitSrc: '/avatar.svg',
-    portraitAlt: 'Portrait placeholder',
+    portraitAlt: 'Anonymous avatar illustration',
   },
-  socials: [
-    { label: 'Facebook profile', href: '#', iconPath: '/icons/facebook.svg' },
-    { label: 'LinkedIn profile', href: '#', iconPath: '/icons/linkedin.svg' },
-    { label: 'Discord profile', href: '#', iconPath: '/icons/discord.svg' },
-  ],
+  socials: [],
 }

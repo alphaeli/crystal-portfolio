@@ -14,6 +14,7 @@ import { profile } from '@/data/profile'
  * With the variable unset the mail client path below is used instead.
  */
 
+// TODO: Connect VITE_CONTACT_ENDPOINT to Crystal's approved GoHighLevel endpoint
 export const ENDPOINT: string = import.meta.env.VITE_CONTACT_ENDPOINT ?? ''
 export const RECIPIENT = profile.email
 
@@ -72,6 +73,10 @@ export async function submitLead(lead: Lead): Promise<SubmitResult> {
       throw new SubmitError(body?.error || `The server answered ${res.status}.`)
     }
     return { via: 'webhook' }
+  }
+
+  if (!RECIPIENT) {
+    throw new SubmitError('Contact is not available yet. Please check back once the contact details are added. Your message has not been sent.')
   }
 
   const subject = `Project inquiry from ${lead.firstName} ${lead.lastName}`

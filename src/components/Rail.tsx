@@ -56,10 +56,10 @@ export default function Rail() {
 
         <h2 className="rail__name">
           {profile.name}
-          <SealCheck size={19} weight="fill" aria-label={profile.verifiedLabel} />
+          {profile.verifiedLabel && <SealCheck size={19} weight="fill" aria-label={profile.verifiedLabel} />}
         </h2>
         <p className="rail__handle">
-          {profile.handle}
+          {profile.role}
         </p>
 
         <div className="rail__actions">
