@@ -61,7 +61,7 @@ const NODES: FlowNode[] = [
   { id: 'n-proposal', Icon: FileText,      title: 'Outcome A',      subtitle: 'Next action',       x: 56,  y: 268 },
   { id: 'n-won',      Icon: Trophy,        title: 'Won',            subtitle: 'Goal reached',      x: 240, y: 268, variant: 'win' },
   { id: 'n-maybe',    Icon: Hourglass,     title: 'Outcome B',      subtitle: 'Not ready yet',     x: 468, y: 268 },
-  { id: 'n-nurture',  Icon: Heart,         title: 'AI Step',        subtitle: 'Follow-up drip',    x: 652, y: 268 },
+  { id: 'n-nurture',  Icon: Heart,         title: 'Nurture',        subtitle: 'Follow-up drip',    x: 652, y: 268 },
   { id: 'n-lost',     Icon: XCircle,       title: 'Lost',           subtitle: 'Closed out',        x: 866, y: 268, variant: 'lost' },
 ]
 
@@ -87,9 +87,9 @@ const LINKS: Link[] = [
 ]
 
 export const TOOLS: { Icon: Icon; label: string }[] = [
-  { Icon: Plug,           label: 'Your CRM' },
+  { Icon: Plug,           label: 'GoHighLevel' },
   { Icon: EnvelopeSimple, label: 'Email & SMS' },
-  { Icon: Sparkle,        label: 'AI Assistant' },
+  { Icon: Sparkle,        label: 'Lead nurturing' },
 ]
 
 const SVGNS = 'http://www.w3.org/2000/svg'
@@ -348,11 +348,10 @@ export default function Autopilot({ compact = false, maxScale = 1 }: AutopilotPr
       <header className="autopilot__head">
         <span className="autopilot__eyebrow">Live automation</span>
         <h2 id="autopilot-heading" className="autopilot__headline">
-          Your workflow, end to end.
+          From inquiry to follow-up.
         </h2>
         <p className="autopilot__intro">
-          PLACEHOLDER - tell me what to put here: two or three sentences walking
-          through this example automation, from the trigger to each outcome.
+          An illustrative workflow connecting lead capture, email, CRM updates, reminders and nurturing. This demonstration does not represent client results.
         </p>
       </header>
       )}

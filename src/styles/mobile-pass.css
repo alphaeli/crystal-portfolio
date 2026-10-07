@@ -189,3 +189,10 @@ html { -webkit-tap-highlight-color: transparent; }
 @keyframes route-fade {
   from { opacity: 0; }
 }
+
+/* Match both copies so the existing intro lands on the longer headline. */
+.home__title, .boot__title { font-size: clamp(30px, 3vw, 60px); }
+.boot__title { white-space: normal; }
+@media (max-width: 1099px) {
+  .home__title, .boot__title { font-size: clamp(30px, 5vw, 48px); }
+}

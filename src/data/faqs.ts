@@ -1,30 +1,24 @@
 export type QA = { q: string; a: string }
 
-/**
- * The questions people ask before they email. One list, used by the FAQ
- * accordion on the Contact view (and the legacy long-scroll FAQ section).
- * Five questions, two or three sentences each: the accordion sits in a
- * fixed panel and more than that pushes the email row off the plate.
- */
 export const FAQS: QA[] = [
   {
-    q: 'What do you do?',
-    a: 'PLACEHOLDER - tell me what to put here: the kinds of work you take on, and who it is usually for.',
+    "q": "What do you do?",
+    "a": "I work across digital marketing, social media, creative production, landing pages and funnels, email, CRM, lead generation and marketing automation. I usually work with service providers, entrepreneurs, SMEs and growing brands that need help turning strategy into consistent execution."
   },
   {
-    q: 'How fast can you start?',
-    a: 'PLACEHOLDER - tell me what to put here: your usual lead time for small fixes vs. larger projects, and your working hours.',
+    "q": "How soon can we start?",
+    "a": "Timing depends on the scope. For full social media management, I typically allow around 15–20 days for onboarding, audit, strategy and preparation before the regular content cycle begins; smaller projects may need less preparation."
   },
   {
-    q: 'How much do you charge?',
-    a: 'PLACEHOLDER - tell me what to put here: how you price (hourly, per project, retainer) and how a quote is put together.',
+    "q": "How do you price projects?",
+    "a": "Pricing depends on scope, deliverables, platforms and the level of ongoing support required. I work with project-based and retainer arrangements; for one-off work, strategy or audit work may be scoped separately, while full-management engagements can include it as part of the setup."
   },
   {
-    q: 'Where are you based?',
-    a: 'PLACEHOLDER - tell me what to put here: your location or timezone, and which client timezones you overlap with.',
+    "q": "Where are you based?",
+    "a": "I'm based in the Philippines (GMT+8) and work remotely. I'm used to collaborating with clients and teams across different time zones."
   },
   {
-    q: 'What happens after I write?',
-    a: 'PLACEHOLDER - tell me what to put here: how fast you reply and what the next step looks like.',
-  },
+    "q": "What happens after I reach out?",
+    "a": "I'll first look at what you're trying to achieve, what is already in place, the scope of support you need and your timeline. From there, we can define the right deliverables, tools and next steps before work begins."
+  }
 ]
